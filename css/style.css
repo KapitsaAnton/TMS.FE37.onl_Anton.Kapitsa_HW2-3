@@ -1,0 +1,163 @@
+
+/* null style */
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit; font-weight: 400;
+}
+
+/* page settings / wrapper */
+
+body{
+    background-color: lightblue;
+}
+
+.wrapper{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+/* section about overall options*/
+
+.about{
+    margin-bottom: 58px;
+    background-color: white;
+}
+
+/* 1-st block of section */
+
+.about__title-box{
+    height: 150px;
+    width: 100%;
+    padding: 54px 0;
+}
+
+.about__title-text{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+}
+
+.about__line{
+    height: 1px;
+    width: 170px;
+    border-top: 1px solid #EC7979;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+/* 2-nd block of section */
+
+.about__annotation-box{
+    height: auto;
+    width: 100%;
+    padding: 0;
+}
+
+.about__annotation-text{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+}
+
+/* 3-d block of section */
+/* overall card options */
+
+.about__wrap{
+    
+}
+
+.about__card{
+    height: auto;
+    width: 370px;
+    display: inline-block;
+    margin-right: 26px;
+}
+
+.about__card:last-child{
+    margin-right: 0;
+}
+
+/* card icons */
+
+.about__icon-block{
+    padding: 0 100px
+}
+
+.about__icon-wrap{
+    height: 170px;
+    width: 170px;
+    padding: 39px;
+}
+
+.about__icon-circle{
+    height: 92px;
+    width: 92px;
+    border: 1px solid #EC7979;
+    border-radius: 50%;
+}
+
+.about__icon{
+    display: block;
+}
+
+#lightbulb_img{
+    margin: 5px auto;
+}
+
+#board_img{
+    margin: 22px auto;
+}
+
+#lightning_img{
+    margin: 12px auto;
+}
+
+/* card title */
+
+.about__card-title-box{
+    width: 100%;
+    text-align: center;
+    padding: 33px 0;
+    margin-bottom: 8px;
+}
+
+.about__card-title-text{
+    font-family: 'Open sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+/* description inside card */
+
+.about__card-text-wrap{
+    padding: 0 30px;
+}
+
+.about__card-text{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
