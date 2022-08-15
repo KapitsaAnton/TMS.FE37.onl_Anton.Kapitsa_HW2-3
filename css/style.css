@@ -15,14 +15,12 @@ h1,h2,h3,h4,h5,h6{
 /* page settings / wrapper */
 
 body{
-    background-color: lightblue;
 }
 
 .wrapper{
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-    background-color: antiquewhite;
 }
 
 /* section about overall options*/
@@ -74,6 +72,7 @@ body{
     font-size: 18px;
     line-height: 21px;
     color: #86878B;
+    margin-bottom: 70px;
 }
 
 /* 3-d block of section */
@@ -96,14 +95,10 @@ body{
 
 /* card icons */
 
-.about__icon-block{
-    padding: 0 100px
-}
-
 .about__icon-wrap{
+    padding: 39px 139px;
     height: 170px;
     width: 170px;
-    padding: 39px;
 }
 
 .about__icon-circle{
@@ -117,16 +112,19 @@ body{
     display: block;
 }
 
-#lightbulb_img{
+.about__lightbulb-img{
     margin: 5px auto;
+    display: block;
 }
 
-#board_img{
+.about__board-img{
     margin: 22px auto;
+    display: block;
 }
 
-#lightning_img{
+.about__lightning-img{
     margin: 12px auto;
+    display: block;
 }
 
 /* card title */
@@ -149,7 +147,7 @@ body{
 /* description inside card */
 
 .about__card-text-wrap{
-    padding: 0 30px;
+    padding: 0 5px;
 }
 
 .about__card-text{
