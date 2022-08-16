@@ -5,7 +5,10 @@
     padding: 0;
     margin: 0;
     border: 0;
+    list-style-type: none;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -23,22 +26,27 @@ body{
     margin: 0 auto;
 }
 
-/* section about overall options*/
-
-.about{
-    margin-bottom: 58px;
-    background-color: white;
-}
-
 /* 1-st block of section */
 
-.about__title-box{
+.section-start{
+    padding-top: 50px;
+}
+
+.section-start--about{
+    padding-bottom: 70px;
+}
+
+.section-start--pricing{
+    padding-bottom: 60px;
+}
+
+.section-start__title{
     height: 150px;
     width: 100%;
     padding: 54px 0;
 }
 
-.about__title-text{
+.section-start__title-text{
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -48,23 +56,20 @@ body{
     color: #000000;
 }
 
-.about__line{
-    height: 1px;
+.section-start__line{
+    height: 0;
     width: 170px;
     border-top: 1px solid #EC7979;
     margin: 0 auto;
     padding-bottom: 40px;
 }
 
-/* 2-nd block of section */
-
-.about__annotation-box{
+.section-start__textbox{
     height: auto;
     width: 100%;
-    padding: 0;
 }
 
-.about__annotation-text{
+.section-start__text{
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -72,21 +77,27 @@ body{
     font-size: 18px;
     line-height: 21px;
     color: #86878B;
-    margin-bottom: 70px;
+}
+
+/* section about overall options*/
+
+.about{
+    padding-bottom: 58px;
+    background-color: white;
 }
 
 /* 3-d block of section */
 /* overall card options */
 
-.about__wrap{
-    
+.about__cards-wrap{
+    display: flex;
+    justify-content: space-between;
 }
 
 .about__card{
     height: auto;
     width: 370px;
     display: inline-block;
-    margin-right: 26px;
 }
 
 .about__card:last-child{
@@ -112,19 +123,20 @@ body{
     display: block;
 }
 
-.about__lightbulb-img{
+.about__img{
+    display: block;
+}
+
+.about__img--lightbulb{
     margin: 5px auto;
-    display: block;
 }
 
-.about__board-img{
+.about__img--board{
     margin: 22px auto;
-    display: block;
 }
 
-.about__lightning-img{
+.about__img--lightning{
     margin: 12px auto;
-    display: block;
 }
 
 /* card title */
@@ -158,4 +170,69 @@ body{
     font-size: 18px;
     line-height: 21px;
 }
+
+/* 4th section: info about prices */
+
+.pricing{
+    background-color: #F5F5F5;
+}
+
+.pricing-wrap{
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-card{
+    background-color: aqua;
+    width: 370px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.pricing-card:hover{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    transition: 0.25s;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+}
+
+.pricing-list__item{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #86878B;
+    background: #FFFFFF;
+    border: 1px solid #F5F5F5;
+    padding: 15px 0;
+}
+
+.pricing-list__item--rate{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #fff;
+    background: #333333;
+}
+
+.pricing-list__item--price{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #fff;
+    background: #333333;
+}
+
+.pricing-list__item--text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    background: #333333;
+}
+
 
