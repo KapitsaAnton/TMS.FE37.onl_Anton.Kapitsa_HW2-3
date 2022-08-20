@@ -8,7 +8,7 @@
     list-style-type: none;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-
+    text-decoration: none;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -26,7 +26,43 @@ body{
     margin: 0 auto;
 }
 
-/* 1-st block of section */
+/* Header */
+
+.header{
+    background-color: #000000;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19.5px 0;
+}
+
+.header__logo{
+}
+
+.header__nav{
+}
+
+.header__nav-list{
+    display: flex;
+}
+
+.header__list-item{
+    margin-left: 50px;
+}
+
+.header__item-text{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+/* 1-st block of (almost) each section */
 
 .section-start{
     padding-top: 50px;
@@ -79,7 +115,275 @@ body{
     color: #86878B;
 }
 
-/* section about overall options*/
+/* 1-st section: banner with form to registrate */
+
+.banner{
+    background-image: url("../img/BannerBackground_951.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 951px;
+}
+
+.color{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner__container{
+    padding: 207px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Description inside banner */
+
+
+
+.banner__description{
+    height: 559px;
+    width: 670px;
+}
+
+.banner__logo{
+    margin-bottom: 51px;
+}
+
+.banner__title{
+    margin-bottom: 55px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+
+.banner__card-wrap{
+    height: 185px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.banner__line{
+    height: 0;
+    width: 170px;
+    border: 1px solid #FFFFFF;
+}
+
+.banner__text{
+    max-width: 270px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+/* Download */
+
+.download-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 2px solid #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+    width: 270px;
+    height: 58px;
+}
+
+.download-button--coral{
+    border: 2px solid #EC7979;
+    background-color: #EC7979;
+}
+
+.download-text{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/* Form inside banner */
+
+.banner__form{
+    background-color: antiquewhite;
+    height: 450px;
+    width: 470px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* TODO */
+.butt{
+    width: 270px;
+    height: 58px;
+    border: 1px solid black;
+}
+
+.banner__card-title-wrap{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.banner__card-title-text{
+    font-family: 'Open sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.banner__card-title--red{
+    color: #EC7979;
+}
+
+.banner__form-inputs{
+    background-color: aquamarine;
+    height: 180px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.banner__donw{
+    height: 60px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* 2-nd section: social info */
+
+.social{
+    background-color: #F8EFEF;
+}
+
+.social__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__text-wrapper{
+    width: 40%;
+}
+
+.social__title{
+    font-family: 'Open sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    padding: 18px 0;
+}
+
+.social__text{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    padding: 18px 0;
+}
+
+/* Social media icons */
+
+.social__list{
+    width: 57%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social__icon-wrap{
+}
+
+.social__icon-link{
+}
+
+/* 3rd section: tabs */
+
+.tabs{
+    padding: 100px 0 0 0;
+}
+
+.tabs__tab-button{
+    width: 203px;
+    height: 41px;
+    background-color: #FFFFFF;
+    border: 1px solid #C6CBCD;
+    border-bottom: none;
+    border-radius: 5px 5px 0px 0px;
+    position: relative;
+    top: 1px;
+}
+
+.tabs__tab-button-text{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.tabs__container{
+    padding: 0 0 0 100px;
+    /* height: 500px; */
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #C6CBCD;
+}
+
+.tabs__text-wrap{
+    width: 570px;
+    padding: 0 0 54px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs__title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    margin: 41.5px 0;
+}
+
+.tabs__text-para{
+    padding: 27px 0;
+    flex-grow: 1;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.tabs__text{
+    margin-bottom: 10px;
+}
+
+.tabs__img-wrap{
+}
+
+.tabs__img{
+    height: 100%;
+}
+
+/* 4th section: about information */
 
 .about{
     padding-bottom: 58px;
@@ -171,7 +475,7 @@ body{
     line-height: 21px;
 }
 
-/* 4th section: info about prices */
+/* 5th section: info about prices */
 
 .pricing{
     background-color: #F5F5F5;
@@ -181,7 +485,6 @@ body{
     padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
-    transition: 0.25s;
 }
 
 .pricing-card{
@@ -189,6 +492,8 @@ body{
     width: 370px;
     display: inline-block;
     margin-top: 10px;
+    margin-bottom: 0;
+    transition: margin-top 0.3s 0.1s, margin-bottom 0.3s 0.1s;
 }
 
 .pricing-card:hover{
