@@ -76,35 +76,10 @@ body{
     padding-bottom: 60px;
 }
 
-.section-start--reviews{
-    padding-bottom: 83px;
-}
-
-.section-start--contacts{
-    padding-bottom: 73px;
-}
-
 .section-start__title{
     height: 150px;
     width: 100%;
     padding: 54px 0;
-    position: relative;
-    margin-bottom: 40px;
-}
-
-.section-start__title:before{
-    content: "";
-    position: absolute;
-    height: 0;
-    width: 170px;
-    border-top: 1px solid #EC7979;
-    margin: 0 auto;
-    bottom: 0;
-    left: calc(50% - 85px);
-}
-
-.section-start__title--light:before{
-    border-top: 1px solid #FFFFFF;
 }
 
 .section-start__title-text{
@@ -117,8 +92,12 @@ body{
     color: #000000;
 }
 
-.section-start__title-text--light{
-    color: #FFFFFF;
+.section-start__line{
+    height: 0;
+    width: 170px;
+    border-top: 1px solid #EC7979;
+    margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 .section-start__textbox{
@@ -134,10 +113,6 @@ body{
     font-size: 18px;
     line-height: 21px;
     color: #86878B;
-}
-
-.section-start__text--light{
-    color: #FFFFFF;
 }
 
 /* 1-st section: banner with form to registrate */
@@ -218,13 +193,6 @@ body{
     background-color: rgba(0, 0, 0, 0);
     width: 270px;
     height: 58px;
-    text-align: center;
-    color: #FFFFFF;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
 }
 
 .download-button--coral{
@@ -232,9 +200,14 @@ body{
     background-color: #EC7979;
 }
 
-.download-button--stylish{
-    margin: 0 auto;
-    z-index: 1;
+.download-text{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 /* Form inside banner */
@@ -327,36 +300,23 @@ body{
 
 /* Social media icons */
 
-.icon__list{
+.social__list{
     width: 57%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.icon__list--footer{
-    margin: 0 auto;
-    width: 570px;
+.social__icon-wrap{
 }
 
-.icon__icon-wrap{
-    width: 53.2px;
-    height: 53.2px;
-}
-
-.icon__icon-link{
-    width: 100%;
-    height: 100%;
+.social__icon-link{
 }
 
 /* 3rd section: tabs */
 
 .tabs{
     padding: 100px 0 0 0;
-}
-
-.tabs__button-wrap{
-    display: flex;
 }
 
 .tabs__tab-button{
@@ -368,6 +328,9 @@ body{
     border-radius: 5px 5px 0px 0px;
     position: relative;
     top: 1px;
+}
+
+.tabs__tab-button-text{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -375,17 +338,9 @@ body{
     line-height: 19px;
 }
 
-.tabs__tab-button:hover{
-    cursor: pointer;
-}
-
-.tabs__tab-button--inactive{
-    border: none;
-    border-bottom: 1px solid #C6CBCD;
-}
-
 .tabs__container{
     padding: 0 0 0 100px;
+    /* height: 500px; */
     display: flex;
     justify-content: space-between;
     border: 1px solid #C6CBCD;
@@ -421,9 +376,12 @@ body{
     margin-bottom: 10px;
 }
 
+.tabs__img-wrap{
+}
+
 .tabs__img{
-    display: inline;
-    height: 100%;
+    /* height: 100%; */
+    display: block;
 }
 
 /* 4th section: about information */
@@ -584,135 +542,4 @@ body{
     background: #333333;
 }
 
-/* 6th section: reviews */
 
-.reviews{
-}
-
-.reviews__cards-wrap{
-    padding-bottom: 64px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.reviews__card{
-    width: 370px;
-    position: relative;
-}
-
-.reviews__comment{
-    background-color: #E2E2E2;
-    border-radius: 10px;
-    padding: 37px 20px;
-    margin-bottom: 66px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #86878B;
-    position: relative;
-}
-
-.reviews__comment:before{
-    content: "";
-    width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-top: 20px solid #E2E2E2;
-    position: absolute;
-    bottom: -20px;
-    left: 70px
-}
-
-.reviews__person-wrapper{
-    height: 90px;
-    display: flex;
-}
-
-.reviews__avatar-wrapper{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 30px;
-}
-
-.reviews__avatar-img{
-    height: 100%;
-    width: 100%;
-    display: block;
-}
-
-.reviews__name-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.reviews__name{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
-    padding: 10.5px 0;
-    display: flex;
-    color: #000000;
-}
-
-.reviews__position{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #000000;
-}
-
-/* 7th section: stylish */
-
-.stylish{
-    width: 1510px;
-    height: 442px;
-    margin: 0 auto;
-    background-image: url("/img/CityBackground.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    padding-bottom: 50px;
-    z-index: -2;
-}
-
-.stylish:before{
-    content: "";
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    z-index: -1;
-}
-
-/* 8th section: contacts */
-
-.contacts{
-    height: 600px;
-}
-
-/* Footer */
-
-.footer{
-    padding-top: 35px;
-    background-color: #000000;
-}
-
-.footer__text{
-    color: rgba(255, 255, 255, 0.5);
-    text-align: center;
-    padding: 27px 0;
-}
