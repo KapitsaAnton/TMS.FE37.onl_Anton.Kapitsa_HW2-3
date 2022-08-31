@@ -1,3 +1,4 @@
+@import 'cdn.css';
 
 /* null style */
 
@@ -43,14 +44,19 @@ body{
 }
 
 .header__nav{
+    width: 80%;
+    display: flex;
+    justify-content: right;
 }
 
 .header__nav-list{
     display: flex;
+    width: 60%;
+    justify-content: space-between;
 }
 
 .header__list-item{
-    margin-left: 50px;
+
 }
 
 .header__item-text{
@@ -60,6 +66,59 @@ body{
     font-size: 14px;
     line-height: 19px;
     color: #FFFFFF;
+}
+
+/* Download */
+
+.download-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 2px solid #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+    width: 270px;
+    height: 58px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.download-button:hover{
+    border: 2px solid #EC7979;
+    color: #EC7979;
+}
+
+.download-button:active{
+    background-color: #AB4949;
+    border: 2px solid #AB4949;
+    color: #FFFFFF;
+}
+
+.download-button--coral{
+    border: 2px solid #EC7979;
+    background-color: #EC7979;
+}
+
+.download-button--coral:hover{
+    border: 2px solid #AB4949;
+    background-color: #AB4949;
+    color: #FFFFFF;
+}
+
+.download-button--coral:active{
+    border: 2px solid #AB4949;
+    background-color: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
+
+.download-button--stylish{
+    margin: 0 auto;
 }
 
 /* 1-st block of (almost) each section */
@@ -80,8 +139,12 @@ body{
     padding-bottom: 83px;
 }
 
-.section-start--contacts{
+.section-start--stylish{
     padding-bottom: 73px;
+}
+
+.section-start--contacts{
+    padding-bottom: 89px;
 }
 
 .section-start__title{
@@ -100,7 +163,8 @@ body{
     border-top: 1px solid #EC7979;
     margin: 0 auto;
     bottom: 0;
-    left: calc(50% - 85px);
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .section-start__title--light:before{
@@ -143,16 +207,25 @@ body{
 /* 1-st section: banner with form to registrate */
 
 .banner{
+    margin: 0 auto;
     background-image: url("../img/BannerBackground_951.jpg");
     background-repeat: no-repeat;
     background-position: center;
     height: 951px;
+    width: 1510px;
+    position: relative;
+    z-index: 0;
 }
 
-.color{
+.banner:after{
+    top: 0;
+    left: 0;
+    content: "";
+    position: absolute;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 .banner__container{
@@ -162,8 +235,6 @@ body{
 }
 
 /* Description inside banner */
-
-
 
 .banner__description{
     height: 559px;
@@ -207,53 +278,17 @@ body{
     color: #FFFFFF;
 }
 
-/* Download */
-
-.download-button{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    border: 2px solid #FFFFFF;
-    background-color: rgba(0, 0, 0, 0);
-    width: 270px;
-    height: 58px;
-    text-align: center;
-    color: #FFFFFF;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-}
-
-.download-button--coral{
-    border: 2px solid #EC7979;
-    background-color: #EC7979;
-}
-
-.download-button--stylish{
-    margin: 0 auto;
-    z-index: 1;
-}
-
 /* Form inside banner */
 
 .banner__form{
-    background-color: antiquewhite;
+    background-color: #FFFFFF;
     height: 450px;
     width: 470px;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-}
-
-/* TODO */
-.butt{
-    width: 270px;
-    height: 58px;
-    border: 1px solid black;
+    overflow: hidden;
 }
 
 .banner__card-title-wrap{
@@ -276,7 +311,6 @@ body{
 }
 
 .banner__form-inputs{
-    background-color: aquamarine;
     height: 180px;
     padding: 0 50px;
     display: flex;
@@ -284,11 +318,25 @@ body{
     justify-content: space-between;
 }
 
-
-.banner__donw{
+.banner__download{
+    background-color: #EC7979;
+    color: #FFFFFF;
+    font-family: 'Open sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
     height: 60px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    cursor: pointer;
+}
+
+.banner__download:hover{
+    background-color: #AB4949;
+}
+
+.banner__download:active{
+    background-color: #EC7979;;
+    box-shadow: inset 0px 0px 10px #AB4949;
 }
 
 /* 2-nd section: social info */
@@ -348,6 +396,17 @@ body{
     width: 100%;
     height: 100%;
 }
+
+.icon__icon-svg{
+    fill: #CCCCCC;
+    transition: 0.3s;
+}
+
+.icon__icon-svg:hover{
+    fill: #EC7979;
+    transform: scale(1.2);
+}
+
 
 /* 3rd section: tabs */
 
@@ -536,7 +595,7 @@ body{
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 0;
-    transition: margin-top 0.3s 0.1s, margin-bottom 0.3s 0.1s;
+    transition: all 0.3s ease-in-out 0.1s;
 }
 
 .pricing-card:hover{
@@ -630,7 +689,6 @@ body{
 }
 
 .reviews__person-wrapper{
-    height: 90px;
     display: flex;
 }
 
@@ -667,6 +725,7 @@ body{
 
 .reviews__position{
     font-family: 'Raleway';
+    padding: 15px 0 0 0;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -678,17 +737,17 @@ body{
 
 .stylish{
     width: 1510px;
-    height: 442px;
+    max-height: 442px;
     margin: 0 auto;
     background-image: url("/img/CityBackground.jpg");
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     padding-bottom: 50px;
-    z-index: -2;
+    z-index: 0;
 }
 
-.stylish:before{
+.stylish:after{
     content: "";
     top: 0;
     height: 100%;
@@ -701,14 +760,43 @@ body{
 /* 8th section: contacts */
 
 .contacts{
-    height: 600px;
+
 }
 
 /* Footer */
 
 .footer{
-    padding-top: 35px;
+    padding-top: 40px;
     background-color: #000000;
+}
+
+.footer__list{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__list-item{
+    position: relative;
+    margin: 0 20px;
+}
+
+.footer__anchor{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-brands,
+.fa-solid{
+    color: #CCCCCC;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.fa-brands:hover,
+.fa-solid:hover{
+    color: #AB4949;
+    transform: scale(1.4);
 }
 
 .footer__text{
