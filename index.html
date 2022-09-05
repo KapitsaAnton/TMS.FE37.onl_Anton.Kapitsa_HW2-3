@@ -65,14 +65,24 @@
                                 <a class="download-button" href="#">Download</a>
                             </div>
                         </div>
+                        <!-- Form -->
                         <form class="banner__form" action="#">
                             <div class="banner__card-title-wrap">
                                 <h4 class="banner__card-title-text">TRY YOUR <span class="banner__card-title-text banner__card-title--red">FREE</span> TRIAL TODAY</h4>
                             </div>
-                            <div class="banner__form-inputs">
-                                <input type="text">
-                                <input type="text">
-                                <input type="password">
+                            <div class="banner__inputs-wrap">       
+                                <div class="banner__input-wrap">
+                                    <label for="username"></label>
+                                    <input class="banner__input" id="username" type="text" placeholder="Name" required>
+                                </div>
+                                <div class="banner__input-wrap">
+                                    <label for="email"></label>
+                                    <input class="banner__input" id="email" type="email" placeholder="Email" required>
+                                </div>
+                                <div class="banner__input-wrap">
+                                    <label for="password"></label>
+                                    <input class="banner__input" id="password" type="password" placeholder="Password" required>
+                                </div>
                             </div>
                             <button class="banner__download" type="submit">Get Started</button>
                         </form>
@@ -373,6 +383,33 @@
                     <p class="section-start__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
+
+            <form class="contacts__form" action="#">
+                <div class="contacts__container">
+                    <div class="contacts__inputs-wrap">       
+                        <div class="contacts__input-wrap">
+                            <label for="username"></label>
+                            <input class="contacts__input" id="username" type="text" placeholder="Name" required>
+                        </div>
+                        <div class="contacts__input-wrap">
+                            <label for="email"></label>
+                            <input class="contacts__input" id="email" type="email" placeholder="Email" required>
+                        </div>
+                        <div class="contacts__input-wrap">
+                            <label for="password"></label>
+                            <input class="contacts__input" id="password" type="password" placeholder="Password" required>
+                        </div>
+                    </div>
+                    
+
+                    <div class="contacts__textbox">
+                        <label for="message"></label>
+                        <textarea class="contacts__textbox-input" name="message" id="message" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                
+                <button class="contacts__download" type="submit">Get Started</button>
+            </form>
         </div>
     </section>
     <!-- Footer -->
